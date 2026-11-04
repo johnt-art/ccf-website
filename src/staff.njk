@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Staff
+permalink: /staff/
+---
+<header class="page-head"><div class="wrap"><p class="kicker">About CCF</p><h1>Meet our staff</h1></div></header>
+<section class="section">
+  <div class="wrap staff">
+    {% for s in staff %}
+    <article class="person {% if not s.photo %}no-photo{% endif %}">
+      {% if s.photo %}<img src="{{ s.photo | img }}" alt="{{ s.name }}" loading="lazy">{% endif %}
+      <div>
+        <h2>{{ s.name }}</h2>
+        <p class="role">{{ s.role }}</p>
+        {% for para in s.bio %}<p>{{ para }}</p>{% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% include "testimonials.njk" %}

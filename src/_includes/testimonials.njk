@@ -1,0 +1,13 @@
+<section class="section">
+  <div class="wrap">
+    <h2 class="center">See what students say</h2>
+    <div class="quotes">
+      {% for t in testimonials %}
+      <figure class="quote">
+        <blockquote>“{{ t.quote }}”</blockquote>
+        <figcaption class="who">{% if t.photo %}<img src="{{ t.photo | img }}" alt="" loading="lazy">{% endif %}<span><strong>{{ t.name }}</strong><small>{{ t.year }}</small></span></figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

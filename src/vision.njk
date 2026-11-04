@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Vision
+permalink: /vision/
+---
+<header class="page-head"><div class="wrap"><p class="kicker">About CCF</p><h1>Vision</h1><p>{{ vision.quote }}</p></div></header>
+<section class="section">
+  <div class="wrap">
+    <p class="lead" style="font-family:'Fraunces',Georgia,serif;font-size:1.35rem;color:var(--navy)">{{ vision.statement }}</p>
+    <p class="lead">{{ vision.how }}</p>
+    <div class="pillars" style="margin-top:32px">
+      {% for p in vision.pillars %}
+      <article class="pillar">
+        <h2>{{ p.title }}</h2>
+        <p class="verse">{{ p.verse }}<cite>{{ p.ref }}</cite></p>
+        {% for para in p.paragraphs %}<p>{{ para }}</p>{% endfor %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

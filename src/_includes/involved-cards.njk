@@ -1,0 +1,11 @@
+<div class="grid">
+  {% for item in involved %}
+  <article class="card">
+    {% if item.photo %}<img src="{{ item.photo | img }}" alt="{{ item.title }}" loading="lazy">{% endif %}
+    <div class="body">
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.text }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</div>

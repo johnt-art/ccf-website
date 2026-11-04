@@ -1,0 +1,17 @@
+# Contact details and links used across the whole site.
+name: Campus Christian Fellowship
+short_name: CCF
+school: Appalachian State University
+tagline: Know God. Follow God. Love Others.
+description: We are a campus ministry at Appalachian State University. We help students Know God, Follow God, and Love Others.
+email: asuccf@gmail.com
+phone: (704) 798-5246
+phone_sms: "7047985246"
+address: PO Box 2661, Boone NC 28607
+facebook: https://www.facebook.com/groups/265128346846832/
+instagram: https://www.instagram.com/asuccf/
+logo: /images/ccf-logo.png
+# Where the website's forms send information (the CCF Donor Manager).
+newsletter_endpoint: https://ccfappstate20.pythonanywhere.com/subscribe
+contact_endpoint: https://ccfappstate20.pythonanywhere.com/contact
+calendar_embed: https://calendar.google.com/calendar/embed?src=asuccf%40gmail.com&ctz=America%2FNew_York

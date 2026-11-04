@@ -1,0 +1,18 @@
+<form class="ccf-form newsletter-form" data-endpoint="{{ site.newsletter_endpoint }}" data-success="You're on the list. Thanks for signing up!">
+  <div class="row2">
+    <label>First name<input name="first_name" required autocomplete="given-name"></label>
+    <label>Last name<input name="last_name" autocomplete="family-name"></label>
+  </div>
+  <label>Email<input type="email" name="email" required autocomplete="email"></label>
+  <label>How are you connected to CCF?
+    <select name="relationship">
+      <option value="">Choose one (optional)</option>
+      <option>Alumni</option><option>Current student</option><option>Parent</option>
+      <option>Parent of alum</option><option>Grandparent</option><option>Friend</option>
+      <option>Church contact</option><option>Other</option>
+    </select>
+  </label>
+  <label class="trap" aria-hidden="true">Leave blank<input name="website" tabindex="-1" autocomplete="off"></label>
+  <button class="btn btn-gold" type="submit">Sign me up</button>
+  <p class="form-status" role="status"></p>
+</form>

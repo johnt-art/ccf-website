@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }} at App State</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta property="og:title" content="{% if title %}{{ title }} · {% endif %}{{ site.name }} at App State">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:image" content="{{ site.logo | img }}">
+  <link rel="icon" href="{{ site.logo | img }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="/"><img src="{{ site.logo | img }}" alt="" width="44" height="44"><span>Campus Christian Fellowship<small>at App State</small></span></a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">Menu</button>
+      <nav id="nav" class="nav">
+        <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
+        <a href="/vision/" {% if page.url == "/vision/" %}aria-current="page"{% endif %}>Vision</a>
+        <a href="/beliefs/" {% if page.url == "/beliefs/" %}aria-current="page"{% endif %}>Beliefs</a>
+        <a href="/staff/" {% if page.url == "/staff/" %}aria-current="page"{% endif %}>Staff</a>
+        <a href="/get-involved/" {% if page.url == "/get-involved/" %}aria-current="page"{% endif %}>Get Involved</a>
+        <a href="/calendar/" {% if page.url == "/calendar/" %}aria-current="page"{% endif %}>Calendar</a>
+        <a href="/photos/" {% if page.url == "/photos/" %}aria-current="page"{% endif %}>Photos</a>
+        <a href="/alumni/" {% if page.url == "/alumni/" %}aria-current="page"{% endif %}>Alumni</a>
+        <a href="/contact/" {% if page.url == "/contact/" %}aria-current="page"{% endif %}>Contact</a>
+        <a class="btn btn-gold" href="/give/">Give</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <img src="{{ site.logo | img }}" alt="Campus Christian Fellowship logo" width="72" height="72">
+        <p class="footer-tag">{{ site.tagline }}</p>
+      </div>
+      <div>
+        <h3>Get in touch</h3>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br>
+        <a href="sms:{{ site.phone_sms }}">{{ site.phone }}</a><br>
+        {{ site.address }}</p>
+        <p class="social"><a href="{{ site.facebook }}">Facebook</a> · <a href="{{ site.instagram }}">Instagram</a></p>
+      </div>
+      <div>
+        <h3>Get our monthly newsletter</h3>
+        {% include "newsletter-form.njk" %}
+      </div>
+    </div>
+    <div class="wrap footer-base">© {{ "" | year }} Campus Christian Fellowship · <a href="/give/">Support CCF</a></div>
+  </footer>
+  <script src="/assets/forms.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: Contact Us
+permalink: /contact/
+description: Contact CCF at App State!
+---
+<header class="page-head"><div class="wrap"><h1>Contact us</h1><p>Have questions about us or simply want to get to know us? Great! We'd LOVE to get to know you too! Feel free to pop in to our Large Group Meeting (Immersion) on Wednesday nights or contact us below.</p></div></header>
+<section class="section">
+  <div class="wrap split">
+    <div class="panel">{% include "contact-form.njk" %}</div>
+    <div>
+      <h2>Get in touch</h2>
+      <p><a href="mailto:{{ site.email }}">{{ site.email }}</a><br><a href="sms:{{ site.phone_sms }}">{{ site.phone }}</a><br>{{ site.address }}</p>
+      <p><a href="{{ site.facebook }}">Facebook</a> · <a href="{{ site.instagram }}">Instagram</a></p>
+    </div>
+  </div>
+</section>

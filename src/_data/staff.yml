@@ -1,0 +1,31 @@
+# Staff page. Leave photo or bio blank and the page simply leaves them out.
+- name: John & Amber Troutman
+  role: Senior Campus Minister (John) & Part-Time Ministry Staff (Amber)
+  photo: /images/staff-troutman.jpeg
+  bio:
+    - >-
+      John and his wife, Amber, graduated from Appalachian State University in
+      2011 and are originally from Salisbury, North Carolina. Both were involved
+      with CCF as student leaders. Upon graduating, feeling the call to ministry,
+      they both pursued a year-long internship with a CCF chapter at the
+      University of West Georgia. They were married the following summer and
+      moved back to Boone for a couple of years. Amber pursued a career in the
+      health and wellness field as an Exercise Specialist and John began
+      thinking about seminary.
+    - >-
+      In the summer of 2014, they packed up and moved out west to Denver,
+      Colorado so John could pursue his Master of Divinity with a focus in
+      theology at Denver Seminary. After 5 years in Denver, a lot of personal
+      and spiritual growth, and the birth of their first child, Jackson, they
+      moved back to Boone in late 2019 where John joined the CCF staff as
+      Associate Campus Minister. He became Senior Campus Minister in August
+      2021.
+    - >-
+      Since moving back, John and Amber have added two more boys to their
+      family, starting with Wyatt, and are now a family of five. John has a
+      passion for seeing others grow into a deeper relationship with Christ, as
+      well as being outdoors, hiking, fishing, or reading.
+- name: Charlene Horton
+  role: Women's Campus Minister
+  photo:
+  bio: []

@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: Give
+permalink: /give/
+description: Give to CCF App State, Campus Christian Fellowship at Appalachian State
+---
+<header class="page-head"><div class="wrap"><h1>Support CCF</h1><p>{{ give.intro }}</p></div></header>
+<section class="section">
+  <div class="wrap">
+    <div class="panel">
+      <h2>Give monthly</h2>
+      <p>Choose an amount below. You'll check out securely through Stripe.</p>
+      <div class="amounts">
+        {% for m in give.monthly %}<a href="{{ m.link }}"><strong>{{ m.amount }}</strong>per month</a>{% endfor %}
+      </div>
+    </div>
+    <div class="grid" style="margin-top:24px">
+      <div class="panel">
+        <h3>One-time gift or another amount</h3>
+        <p>If you'd like to make a one-time gift, or set up a recurring gift of another amount, you can do that through PayPal.</p>
+        <a class="btn" href="{{ give.paypal }}">Give through PayPal</a>
+      </div>
+      <div class="panel">
+        <h3>Mail a check</h3>
+        <p>Make checks out to <strong>{{ give.check_to }}</strong> and mail to:<br>{{ give.check_address }}</p>
+      </div>
+    </div>
+    <p class="lead center" style="margin-top:36px">{{ give.thanks }}</p>
+  </div>
+</section>

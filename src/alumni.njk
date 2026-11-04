@@ -1,0 +1,22 @@
+---
+layout: base.njk
+title: Alumni
+permalink: /alumni/
+---
+<header class="page-head"><div class="wrap"><p class="kicker" style="color:var(--gold)">{{ alumni.kicker }}</p><h1>{{ alumni.title }}</h1><p>{{ alumni.intro }}</p></div></header>
+<section class="section">
+  <div class="wrap">
+    <div class="grid">
+      {% for c in alumni.cards %}
+      <article class="card">
+        {% if c.photo %}<img src="{{ c.photo | img }}" alt="{{ c.title }}" loading="lazy">{% endif %}
+        <div class="body">
+          <h3>{{ c.title }}</h3>
+          <p>{{ c.text }}</p>
+          {% if c.link %}<a class="btn" href="{{ c.link }}">{{ c.button }}</a>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

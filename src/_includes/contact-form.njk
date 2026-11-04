@@ -1,0 +1,11 @@
+<form class="ccf-form contact-form" data-endpoint="{{ site.contact_endpoint }}" data-success="Thanks! Your message is on its way. We'll get back to you soon.">
+  <div class="row2">
+    <label>First name<input name="first_name" autocomplete="given-name"></label>
+    <label>Last name<input name="last_name" autocomplete="family-name"></label>
+  </div>
+  <label>Email<input type="email" name="email" required autocomplete="email"></label>
+  <label>Your message<textarea name="message" rows="5" required></textarea></label>
+  <label class="trap" aria-hidden="true">Leave blank<input name="website" tabindex="-1" autocomplete="off"></label>
+  <button class="btn" type="submit">Send</button>
+  <p class="form-status" role="status"></p>
+</form>

@@ -1,0 +1,13 @@
+---
+layout: base.njk
+title: Photos
+permalink: /photos/
+---
+<header class="page-head"><div class="wrap"><h1>Our ministry in pictures</h1><p>CCF @ App State</p></div></header>
+<section class="section">
+  <div class="wrap gallery">
+    {% for p in photos %}
+    <figure><img src="{{ p.photo | img }}" alt="{{ p.caption }}" loading="lazy">{% if p.caption %}<figcaption>{{ p.caption }}</figcaption>{% endif %}</figure>
+    {% endfor %}
+  </div>
+</section>

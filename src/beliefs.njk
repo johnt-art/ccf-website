@@ -1,0 +1,18 @@
+---
+layout: base.njk
+title: What We Believe
+permalink: /beliefs/
+---
+<header class="page-head"><div class="wrap"><p class="kicker">About CCF</p><h1>What we believe</h1><p>{{ beliefs.summary }}</p></div></header>
+<section class="section">
+  <div class="wrap">
+    <p>Below is our complete statement of faith.</p>
+    <ol class="beliefs">
+      {% for b in beliefs.statements %}
+      <li>{{ b.text }}{% if b.refs %}<span class="refs">{{ b.refs }}</span>{% endif %}
+        {% if b.list %}<ul>{% for x in b.list %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
