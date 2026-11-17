@@ -3,11 +3,25 @@ layout: base.njk
 title: Photos
 permalink: /photos/
 ---
+{%- set current = photos | photoGroup(false) -%}
+{%- set older = photos | photoGroup(true) -%}
 <header class="page-head"><div class="wrap"><h1>Our ministry in pictures</h1><p>CCF @ App State</p></div></header>
 <section class="section">
-  <div class="wrap gallery">
-    {% for p in photos %}
-    <figure><img src="{{ p.photo | img }}" alt="{{ p.caption }}" loading="lazy">{% if p.caption %}<figcaption>{{ p.caption }}</figcaption>{% endif %}</figure>
-    {% endfor %}
+  <div class="wrap">
+    <div class="gallery">
+      {% for p in current %}
+      <figure><img src="{{ p.photo | img }}" alt="{{ p.description or 'CCF students' }}" loading="lazy"></figure>
+      {% endfor %}
+    </div>
+    {% if older.length %}
+    <details class="older">
+      <summary>Older photos</summary>
+      <div class="gallery">
+        {% for p in older %}
+        <figure><img src="{{ p.photo | img }}" alt="{{ p.description or 'CCF students' }}" loading="lazy"></figure>
+        {% endfor %}
+      </div>
+    </details>
+    {% endif %}
   </div>
 </section>

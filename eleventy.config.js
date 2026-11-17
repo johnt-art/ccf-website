@@ -21,6 +21,13 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
 
+  // Photo gallery: split into current vs archived, newest first.
+  eleventyConfig.addFilter("photoGroup", (list, archived) =>
+    (list || [])
+      .filter((p) => p && p.photo && Boolean(p.archived) === archived)
+      .sort((a, b) => new Date(b.added || 0) - new Date(a.added || 0))
+  );
+
   return {
     dir: { input: "src", includes: "_includes", data: "_data", output: "_site" },
     htmlTemplateEngine: "njk",

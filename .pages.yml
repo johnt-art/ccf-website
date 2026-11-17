@@ -13,7 +13,9 @@ content:
     list: true
     fields:
       - { name: photo, label: Photo, type: image }
-      - { name: caption, label: Caption, type: string }
+      - { name: added, label: Date added (newest show first), type: date }
+      - { name: archived, label: "Archive (moves it to 'Older photos')", type: boolean }
+      - { name: description, label: "Short description (not shown; helps screen readers)", type: string }
 
   - name: staff
     label: Staff

@@ -1,13 +1,28 @@
-# Photo gallery ("Our Ministry in Pictures"). Add, remove, or reorder freely.
+# Photo gallery ("Our Ministry in Pictures").
+# Newest photos show first. Check "archived" to move a photo into the
+# "Older photos" section at the bottom of the page. Descriptions are never
+# shown on the page; they help people using screen readers.
 - photo: /images/gallery/fall-2023-firetower-hike.jpg
-  caption: Fall 2023 Firetower Hike
+  description: Students on a fall hike to the fire tower
+  added: 2023-10-01
+  archived: false
 - photo: /images/gallery/fall-retreat-2023-horses.jpg
-  caption: Fall Retreat 2023
+  description: Students with horses at fall retreat
+  added: 2023-09-30
+  archived: false
 - photo: /images/gallery/woodchopping-2023.jpg
-  caption: Woodchopping 2023
+  description: Students chopping and stacking wood
+  added: 2023-09-15
+  archived: false
 - photo: /images/gallery/bowling-2023.jpg
-  caption: Bowling 2023
+  description: CCF bowling night
+  added: 2023-02-01
+  archived: false
 - photo: /images/gallery/christmas-party-2022.jpg
-  caption: Christmas Party 2022
+  description: CCF Christmas party
+  added: 2022-12-05
+  archived: false
 - photo: /images/gallery/thanksgiving-fall-2022.jpg
-  caption: Thanksgiving 2022
+  description: CCF Thanksgiving dinner
+  added: 2022-11-20
+  archived: false
