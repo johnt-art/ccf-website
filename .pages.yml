@@ -1,5 +1,9 @@
 # Editing screen settings (Pages CMS, app.pagescms.org).
 # Charlene and future staff edit photos and text here; saving updates the website.
+settings:
+  commit:
+    identity: user   # history shows who made each edit
+
 media:
   input: src/images
   output: /images
