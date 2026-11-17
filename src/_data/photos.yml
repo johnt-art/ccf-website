@@ -1,28 +1,32 @@
-# Photo gallery ("Our Ministry in Pictures").
-# Newest photos show first. Check "archived" to move a photo into the
-# "Older photos" section at the bottom of the page. Descriptions are never
-# shown on the page; they help people using screen readers.
 - photo: /images/gallery/fall-2023-firetower-hike.jpg
-  description: Students on a fall hike to the fire tower
   added: 2023-10-01
   archived: false
+  description: Students on a fall hike to the fire tower
 - photo: /images/gallery/fall-retreat-2023-horses.jpg
-  description: Students with horses at fall retreat
   added: 2023-09-30
   archived: false
+  description: Students with horses at fall retreat
 - photo: /images/gallery/woodchopping-2023.jpg
-  description: Students chopping and stacking wood
   added: 2023-09-15
   archived: false
+  description: Students chopping and stacking wood
 - photo: /images/gallery/bowling-2023.jpg
-  description: CCF bowling night
   added: 2023-02-01
   archived: false
+  description: CCF bowling night
 - photo: /images/gallery/christmas-party-2022.jpg
-  description: CCF Christmas party
   added: 2022-12-05
   archived: false
+  description: CCF Christmas party
 - photo: /images/gallery/thanksgiving-fall-2022.jpg
-  description: CCF Thanksgiving dinner
   added: 2022-11-20
   archived: false
+  description: CCF Thanksgiving dinner
+- photo: /images/Girls_CGroup.jpeg
+  added: 2026-11-17
+  archived: false
+  description: Girls C-Group Spring 2026
+- photo: /images/Ski_Night_2026.jpeg
+  added: 2026-11-17
+  archived: false
+  description: Ski Night 2026
