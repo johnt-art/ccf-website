@@ -40,6 +40,7 @@ p { margin: 0 0 1em; }
 /* Header */
 .topbar { background: var(--navy); color: #fff; position: sticky; top: 0; z-index: 10; }
 .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
+.brand img, .footer-grid > div:first-child img { background: #fff; border-radius: 50%; padding: 4px; }
 .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 600; line-height: 1.1; }
 .brand small { display: block; font-weight: 400; opacity: .75; font-size: .8rem; }
 .nav { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
@@ -86,9 +87,9 @@ p { margin: 0 0 1em; }
 
 /* Staff */
 .staff { display: grid; gap: 32px; }
-.person { display: grid; gap: 28px; grid-template-columns: 300px 1fr; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+.person { display: grid; gap: 28px; grid-template-columns: 380px 1fr; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
 .person.no-photo { grid-template-columns: 1fr; }
-.person img { border-radius: 10px; aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
+.person img { border-radius: 10px; width: 100%; height: auto; align-self: start; }
 .person .role { color: var(--gold-dark); font-weight: 600; margin-bottom: 1em; }
 @media (max-width: 720px) { .person { grid-template-columns: 1fr; } }
 
